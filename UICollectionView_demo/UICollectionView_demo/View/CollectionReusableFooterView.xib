@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="footIdentifier" id="U6b-Vx-4bR" customClass="CollectionReusableFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHN-rG-yBL">
+                    <rect key="frame" x="0.0" y="0.0" width="160" height="50"/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.65098039220000004" blue="0.13725490200000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="重置">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuC-4W-nFk">
+                    <rect key="frame" x="160" y="0.0" width="160" height="50"/>
+                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="确定">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="VuC-4W-nFk" firstAttribute="leading" secondItem="HHN-rG-yBL" secondAttribute="trailing" id="BZN-aB-nvy"/>
+                <constraint firstItem="HHN-rG-yBL" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="HQB-1a-gVw"/>
+                <constraint firstItem="VuC-4W-nFk" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="U4e-Z0-YDI"/>
+                <constraint firstAttribute="bottom" secondItem="HHN-rG-yBL" secondAttribute="bottom" id="Wcu-EC-nwc"/>
+                <constraint firstItem="VuC-4W-nFk" firstAttribute="width" secondItem="HHN-rG-yBL" secondAttribute="width" id="YKu-qg-IUf"/>
+                <constraint firstAttribute="bottom" secondItem="VuC-4W-nFk" secondAttribute="bottom" id="dAI-hE-nfd"/>
+                <constraint firstItem="VuC-4W-nFk" firstAttribute="height" secondItem="HHN-rG-yBL" secondAttribute="height" id="gxt-nR-4Ci"/>
+                <constraint firstAttribute="trailing" secondItem="VuC-4W-nFk" secondAttribute="trailing" id="w6D-MP-6J1"/>
+                <constraint firstItem="HHN-rG-yBL" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="wH8-aa-Lrr"/>
+                <constraint firstItem="VuC-4W-nFk" firstAttribute="leading" secondItem="HHN-rG-yBL" secondAttribute="trailing" id="zWM-qF-Xdr"/>
+            </constraints>
+            <connections>
+                <outlet property="resetBut" destination="HHN-rG-yBL" id="RI5-Qy-u1t"/>
+                <outlet property="sureBut" destination="VuC-4W-nFk" id="WuU-NW-iQj"/>
+            </connections>
+        </collectionReusableView>
+    </objects>
+</document>
